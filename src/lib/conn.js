@@ -24,8 +24,8 @@ const {
   User,
 } = conn.models;
 
-Product.hasOne(Category);
-Category.belongsTo(Product);
+Category.hasMany(Product);
+Product.belongsTo(Category);
 
 Supplier.hasMany(Product);
 Product.belongsTo(Supplier);
