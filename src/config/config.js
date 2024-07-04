@@ -1,5 +1,10 @@
 import 'dotenv/config';
 
-const { PORT = 3000, URI_DATABASE, URI_CLOUDINARY } = process.env;
+const {
+  PORT = 3000,
+  URI_DATABASE,
+  URI_CLOUDINARY,
+  SUPER_SECRET_PASSWORD,
+} = process.env;
 
-export { PORT, URI_CLOUDINARY, URI_DATABASE };
+export { PORT, URI_CLOUDINARY, URI_DATABASE, SUPER_SECRET_PASSWORD };
