@@ -3,7 +3,7 @@ import { REACTIONS } from '../../data/enums.js';
 
 const ReactionModel = (conn) => {
   conn.define(
-    'Reactions',
+    'Reaction',
     {
       id: {
         type: DataTypes.UUID,

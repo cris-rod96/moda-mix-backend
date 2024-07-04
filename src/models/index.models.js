@@ -6,6 +6,7 @@ import IncomeDetailModel from './income-detail/income-detail.model.js';
 import IncomeModel from './income/income.model.js';
 import OrderDetailModel from './order-detail/order-detail.model.js';
 import OrderModel from './order/order.model.js';
+import PaymentModel from './payment/payment.model.js';
 import ProductModel from './product/product.model.js';
 import ReactionModel from './reaction/reaction.model.js';
 import ReplyModel from './reply/reply.model.js';
@@ -20,6 +21,7 @@ export const models = [
   IncomeModel,
   OrderDetailModel,
   OrderModel,
+  PaymentModel,
   ProductModel,
   ReactionModel,
   ReplyModel,

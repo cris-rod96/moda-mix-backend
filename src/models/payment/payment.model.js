@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import { PAYMENT_STATUS } from '../../data/enums';
+import { PAYMENT_STATUS } from '../../data/enums.js';
 
 const PaymentModel = (conn) => {
   conn.define(

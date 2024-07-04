@@ -67,6 +67,14 @@ const ProductModel = (conn) => {
           key: 'id',
         },
       },
+      SupplierId: {
+        type: DataTypes.UUID,
+        allowNull: false,
+        references: {
+          model: 'Suppliers',
+          key: 'id',
+        },
+      },
     },
     {
       timestamps: false,

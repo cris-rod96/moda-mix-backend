@@ -2,19 +2,17 @@ import { DataTypes } from 'sequelize';
 
 const ReplyModel = (conn) => {
   conn.define(
-    'Replies',
+    'Reply',
     {
       id: {
         type: DataTypes.UUID,
         primaryKey: true,
         defaultValue: DataTypes.UUIDV4,
       },
-
       content: {
         type: DataTypes.TEXT,
         allowNull: false,
       },
-
       date: {
         type: DataTypes.DATE,
         defaultValue: Date.now(),

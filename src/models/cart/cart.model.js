@@ -20,7 +20,7 @@ const CartModel = (conn) => {
       },
 
       status: {
-        type: DataTypes.UUID,
+        type: DataTypes.BOOLEAN,
         defaultValue: true,
       },
     },
