@@ -4,6 +4,8 @@ import CategoryModel from './category/category.model.js';
 import CommentModel from './comment/comment.model.js';
 import IncomeDetailModel from './income-detail/income-detail.model.js';
 import IncomeModel from './income/income.model.js';
+import OrderDetailModel from './order-detail/order-detail.model.js';
+import OrderModel from './order/order.model.js';
 import ProductModel from './product/product.model.js';
 import ReactionModel from './reaction/reaction.model.js';
 import ReplyModel from './reply/reply.model.js';
@@ -14,8 +16,10 @@ export const models = [
   CartModel,
   CategoryModel,
   CommentModel,
-  IncomeModel,
   IncomeDetailModel,
+  IncomeModel,
+  OrderDetailModel,
+  OrderModel,
   ProductModel,
   ReactionModel,
   ReplyModel,
