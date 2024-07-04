@@ -1,6 +1,13 @@
 import app from './src/app.js';
 import { PORT } from './src/config/config.js';
+import { conn } from './src/lib/conn.js';
 
-app.listen(PORT, () => {
-  console.log(`Server listening in port ::${PORT}`);
-});
+conn
+  .sync({ logging: false, force: true })
+  .then(() => {
+    console.log('Database connected');
+    app.listen(PORT, () => {
+      console.log(`Server listening in port ::${PORT}`);
+    });
+  })
+  .catch(console.log);
