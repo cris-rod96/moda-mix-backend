@@ -1,8 +1,9 @@
 import { DataTypes } from 'sequelize';
+import { REACTIONS } from '../../data/enums.js';
 
-const CommentModel = (conn) => {
+const ReactionModel = (conn) => {
   conn.define(
-    'Comment',
+    'Reactions',
     {
       id: {
         type: DataTypes.UUID,
@@ -10,14 +11,10 @@ const CommentModel = (conn) => {
         defaultValue: DataTypes.UUIDV4,
       },
 
-      content: {
-        type: DataTypes.TEXT,
+      reaction: {
+        type: DataTypes.ENUM,
         allowNull: false,
-      },
-
-      date: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        values: REACTIONS,
       },
 
       UserId: {
@@ -36,14 +33,9 @@ const CommentModel = (conn) => {
           key: 'id',
         },
       },
-
-      status: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: true,
-      },
     },
     { timestamps: false }
   );
 };
 
-export default CommentModel;
+export default ReactionModel;

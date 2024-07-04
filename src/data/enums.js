@@ -51,3 +51,5 @@ export const COLORS = [
   'Verde Oliva',
   'Lila',
 ];
+
+export const REACTIONS = ['Like', 'Unlike'];

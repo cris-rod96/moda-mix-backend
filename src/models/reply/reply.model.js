@@ -1,8 +1,8 @@
 import { DataTypes } from 'sequelize';
 
-const CommentModel = (conn) => {
+const ReplyModel = (conn) => {
   conn.define(
-    'Comment',
+    'Replies',
     {
       id: {
         type: DataTypes.UUID,
@@ -16,8 +16,17 @@ const CommentModel = (conn) => {
       },
 
       date: {
-        type: DataTypes.STRING,
+        type: DataTypes.DATE,
+        defaultValue: Date.now(),
+      },
+
+      CommentId: {
+        type: DataTypes.UUID,
         allowNull: false,
+        references: {
+          model: 'Comments',
+          key: 'id',
+        },
       },
 
       UserId: {
@@ -25,14 +34,6 @@ const CommentModel = (conn) => {
         allowNull: false,
         references: {
           model: 'Users',
-          key: 'id',
-        },
-      },
-      ProductId: {
-        type: DataTypes.UUID,
-        allowNull: false,
-        references: {
-          model: 'Products',
           key: 'id',
         },
       },
@@ -46,4 +47,4 @@ const CommentModel = (conn) => {
   );
 };
 
-export default CommentModel;
+export default ReplyModel;
