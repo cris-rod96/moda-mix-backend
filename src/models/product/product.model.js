@@ -1,4 +1,4 @@
-import { DataTypes, Sequelize } from 'sequelize';
+import { DataTypes } from 'sequelize';
 import { BRANDS, COLORS } from '../../data/enums.js';
 
 const ProductModel = (conn) => {
@@ -64,14 +64,6 @@ const ProductModel = (conn) => {
         allowNull: false,
         references: {
           model: 'Categories',
-          key: 'id',
-        },
-      },
-      SupplierId: {
-        type: DataTypes.UUID,
-        allowNull: false,
-        references: {
-          model: 'Suppliers',
           key: 'id',
         },
       },
