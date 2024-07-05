@@ -11,7 +11,7 @@ const ProductModel = (conn) => {
         defaultValue: DataTypes.UUIDV4,
       },
       name: {
-        type: DataTypes.UUID,
+        type: DataTypes.STRING,
         allowNull: false,
         unique: true,
       },

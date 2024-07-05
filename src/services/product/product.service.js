@@ -24,12 +24,13 @@ const create = async (data) => {
   const image = await utlCloudinary.uploadImage(
     'products',
     data.name.toLowerCase(),
+    'PRODUCTS',
     data.image
   );
 
   const product = await Product.create({
     ...data,
-    image: [image],
+    images: [image],
   });
   return product
     ? { code: 201, message: 'Producto creado con éxito' }

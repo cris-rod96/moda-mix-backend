@@ -3,5 +3,5 @@ export const PREFIXES = {
   INCOMES: 'ICM',
   PAYMENT: 'PYM',
   USERS: 'USR',
-  PRODUCTS: 'PRD',
+  PRODUCTS: 'PROD',
 };
