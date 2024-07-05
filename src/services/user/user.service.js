@@ -12,7 +12,6 @@ const getAll = async () => {
 };
 
 const create = async (data) => {
-  console.log(data);
   const userExist = await User.findOne({
     where: {
       [Op.or]: [{ email: data.email }, { phone: data.phone }],
