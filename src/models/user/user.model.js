@@ -34,6 +34,10 @@ const UserModel = (conn) => {
       image: {
         type: DataTypes.STRING,
       },
+      status: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: true,
+      },
     },
     {
       timestamps: false,
