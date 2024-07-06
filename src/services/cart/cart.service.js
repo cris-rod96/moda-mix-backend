@@ -19,7 +19,7 @@ const getByUser = async (UserId) => {
     },
   });
   return cart
-    ? { code: 200, userExist }
+    ? { code: 200, cart }
     : { code: 400, message: 'Carrito no encontrado.' };
 };
 
