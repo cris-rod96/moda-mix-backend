@@ -71,13 +71,13 @@ const update = async (id, data) => {
   if (conflict)
     return {
       code: 400,
-      message: 'Ya existe otro producto con estas credenciales',
+      message: 'Ya existe otro producto con estos datos',
     };
 
   const [updated] = await Product.update(data, { where: { id } });
   return updated
     ? { code: 200, message: 'Producto actualizado' }
-    : { code: 400, message: 'Error al actualizar el product' };
+    : { code: 400, message: 'Error al actualizar el producto' };
 };
 
 export default { getAll, create, remove, update };

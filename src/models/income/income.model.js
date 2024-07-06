@@ -16,7 +16,7 @@ const IncomeModel = (conn) => {
       },
       date: {
         type: DataTypes.DATE,
-        allowNull: false,
+        defaultValue: Date.now(),
       },
       amount: {
         type: DataTypes.FLOAT,
