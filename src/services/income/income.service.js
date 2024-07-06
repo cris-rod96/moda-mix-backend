@@ -40,7 +40,7 @@ const remove = async (id) => {
   await income.save();
   return { code: 200, message: 'Se eliminó el ingreso con éxito' };
 };
-const update = async () => {
+const update = async (id, data) => {
   const income = await Income.findOne({
     where: {
       id,
