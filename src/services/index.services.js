@@ -5,8 +5,10 @@ import supplierService from './supplier/supplier.service.js';
 import userService from './user/user.service.js';
 import productService from './product/product.service.js';
 import cartService from './cart/cart.service.js';
+import cartDetailService from './cart-detail/cart-detail.service.js';
 export {
   cartService,
+  cartDetailService,
   categoryService,
   incomeDetailService,
   incomeService,
