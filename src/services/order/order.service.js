@@ -56,4 +56,4 @@ const updateStatus = async (status, id) => {
   return { code: 200, message: 'Pedido actualizado con éxito' };
 };
 
-export default { getAll, getByUser, remove, updateStatus };
+export default { getAll, getByUser, create, remove, updateStatus };
