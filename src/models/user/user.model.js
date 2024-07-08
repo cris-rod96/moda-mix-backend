@@ -1,4 +1,5 @@
 import { DataTypes } from 'sequelize';
+import { ROLES } from '../../data/enums.js';
 
 const UserModel = (conn) => {
   conn.define(
@@ -37,6 +38,12 @@ const UserModel = (conn) => {
       status: {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
+      },
+
+      rol: {
+        type: DataTypes.ENUM,
+        values: ROLES,
+        defaultValue: 'Cliente',
       },
     },
     {

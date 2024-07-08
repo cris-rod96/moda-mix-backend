@@ -78,3 +78,5 @@ export const PAYMENT_STATUS = [
   'Autorizado', // El pago ha sido autorizado pero aún no ha sido capturado.
   'Capturado', // El pago ha sido autorizado y el dinero ha sido transferido.
 ];
+
+export const ROLES = ['Administrador', 'Super Administrador', 'Cliente'];
