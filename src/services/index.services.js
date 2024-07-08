@@ -11,6 +11,7 @@ import orderDetailService from './order-detail/order-detail.service.js';
 import paymentService from './payment/payment.service.js';
 import reactionService from './reaction/reaction.service.js';
 import commentService from './comment/comment.service.js';
+import replyService from './reply/reply.service.js';
 export {
   cartService,
   cartDetailService,
@@ -25,4 +26,5 @@ export {
   orderService,
   paymentService,
   reactionService,
+  replyService,
 };
