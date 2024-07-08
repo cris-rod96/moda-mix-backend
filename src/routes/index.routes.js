@@ -9,6 +9,8 @@ import orderRouter from './order/order.route.js';
 import orderDetailRouter from './order-detail/order-detail.route.js';
 import cartRouter from './cart/cart.route.js';
 import cartDetailsRouter from './cart-detail/cart-detail.route.js';
+import paymentRouter from './payment/payment.route.js';
+
 const rootRouter = Router();
 
 rootRouter.use('/categories', categoryRouter);
@@ -21,4 +23,5 @@ rootRouter.use('/orders', orderRouter);
 rootRouter.use('/order-details', orderDetailRouter);
 rootRouter.use('/cart', cartRouter);
 rootRouter.use('/cart-details', cartDetailsRouter);
+rootRouter.use('/payments', paymentRouter);
 export default rootRouter;
