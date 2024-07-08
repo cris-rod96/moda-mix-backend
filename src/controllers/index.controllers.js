@@ -11,6 +11,8 @@ import orderDetailControllers from './order-detail/order-detail.controller.js';
 import paymentControllers from './payment/payment.controller.js';
 import reactionControllers from './reaction/reaction.controller.js';
 import commentControllers from './comment/comment.controller.js';
+import replyControllers from './reply/reply.controller.js';
+
 export {
   categoryControllers,
   cartControllers,
@@ -24,5 +26,6 @@ export {
   paymentControllers,
   productControllers,
   reactionControllers,
+  replyControllers,
   userControllers,
 };
