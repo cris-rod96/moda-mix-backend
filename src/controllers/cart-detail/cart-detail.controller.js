@@ -1,9 +1,9 @@
 import { cartDetailService } from '../../services/index.services.js';
 
-const getItemsByCart = async (req, res) => {
+const getByCart = async (req, res) => {
   try {
     const { id } = req.params;
-    const { code, cartItems } = await cartDetailService.getItemsByCart(id);
+    const { code, cartItems } = await cartDetailService.getByCart(id);
     return req.status(code).json({ cartItems });
   } catch (error) {
     return res.status(500).json({
@@ -11,10 +11,10 @@ const getItemsByCart = async (req, res) => {
     });
   }
 };
-const addItems = async (req, res) => {
+const create = async (req, res) => {
   try {
     const { CartId, items } = req.body;
-    const { code, message } = await cartDetailService.addItems(CartId, items);
+    const { code, message } = await cartDetailService.create(CartId, items);
     return res.status(code).json({ message });
   } catch (error) {
     return res.status(500).json({
@@ -23,10 +23,10 @@ const addItems = async (req, res) => {
   }
 };
 
-const deleteItem = async (req, res) => {
+const remove = async (req, res) => {
   try {
     const { id } = req.params;
-    const { code, message } = await cartDetailService.deleteItem(id);
+    const { code, message } = await cartDetailService.create(id);
     return res.status(code).json({ message });
   } catch (error) {
     return res.status(500).json({
@@ -35,4 +35,4 @@ const deleteItem = async (req, res) => {
   }
 };
 
-export default { addItems, deleteItem, getItemsByCart };
+export default { create, remove, getByCart };

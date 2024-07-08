@@ -1,6 +1,6 @@
 import { CartDetail } from '../../lib/conn.js';
 
-const addItems = async (CartId, items) => {
+const create = async (CartId, items) => {
   const deleteItems = await CartDetail.destroy({
     where: {
       CartId,
@@ -14,7 +14,7 @@ const addItems = async (CartId, items) => {
   return { code: 201, message: 'Productos añadidos con éxito al carrito' };
 };
 
-const getItemsByCart = async (CartId) => {
+const getByCart = async (CartId) => {
   const cartItems = await CartDetail.findAll({
     where: {
       CartId,
@@ -23,7 +23,7 @@ const getItemsByCart = async (CartId) => {
   return { code: 200, cartItems };
 };
 
-const deleteItem = async (id) => {
+const remove = async (id) => {
   const deleted = await CartDetail.destroy({
     where: {
       id,
@@ -34,4 +34,4 @@ const deleteItem = async (id) => {
     : { code: 400, message: 'Error al eliminar el producto del carrito' };
 };
 
-export default { addItems, getItemsByCart, deleteItem };
+export default { create, getByCart, remove };
