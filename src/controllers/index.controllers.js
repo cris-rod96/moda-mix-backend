@@ -10,10 +10,12 @@ import orderControllers from './order/order.controller.js';
 import orderDetailControllers from './order-detail/order-detail.controller.js';
 import paymentControllers from './payment/payment.controller.js';
 import reactionControllers from './reaction/reaction.controller.js';
+import commentControllers from './comment/comment.controller.js';
 export {
   categoryControllers,
   cartControllers,
   cartDetailControllers,
+  commentControllers,
   incomeDetailControllers,
   incomeControllers,
   supplierControllers,
