@@ -12,6 +12,7 @@ import cartDetailsRouter from './cart-detail/cart-detail.route.js';
 import paymentRouter from './payment/payment.route.js';
 import reactionRouter from './reaction/reaction.route.js';
 import commentRouter from './comment/comment.route.js';
+import replyRouter from './reply/reply.router.js';
 const rootRouter = Router();
 
 rootRouter.use('/categories', categoryRouter);
@@ -27,4 +28,5 @@ rootRouter.use('/cart-details', cartDetailsRouter);
 rootRouter.use('/payments', paymentRouter);
 rootRouter.use('/reactions', reactionRouter);
 rootRouter.use('/comments', commentRouter);
+rootRouter.use('/replies', replyRouter);
 export default rootRouter;
