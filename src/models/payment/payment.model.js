@@ -40,7 +40,6 @@ const PaymentModel = (conn) => {
       },
       voucher: {
         type: DataTypes.STRING,
-        allowNull: false,
       },
 
       status: {

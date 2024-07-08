@@ -73,7 +73,7 @@ export const PAYMENT_STATUS = [
   'Fallido', // El pago no se ha podido completar debido a un error.
   'Reembolsado', // El pago ha sido devuelto al cliente.
   'Cancelado', // El pago ha sido cancelado antes de completarse.
-  'En espera', //  El pago está en espera por alguna razón, como verificación adicional o problemas técnicos.
+  'En verificación', //  El pago está en espera por alguna razón, como verificación adicional o problemas técnicos.
   'Disputado', // El pago está en disputa, generalmente porque el cliente ha iniciado una reclamación.
   'Autorizado', // El pago ha sido autorizado pero aún no ha sido capturado.
   'Capturado', // El pago ha sido autorizado y el dinero ha sido transferido.
