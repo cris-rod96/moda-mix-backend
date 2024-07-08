@@ -36,7 +36,7 @@ const remove = async (id) => {
     : { code: 400, message: 'No se pudo eliminar la reacción' };
 };
 
-const updateReaction = async (id, data) => {
+const update = async (id, data) => {
   const reaction = await Reaction.findOne({
     where: {
       id,
@@ -48,4 +48,4 @@ const updateReaction = async (id, data) => {
   return { code: 200, message: 'Reacción actualizada con éxito' };
 };
 
-export default { getByUser, getByProduct, create, remove, updateReaction };
+export default { getByUser, getByProduct, create, remove, update };

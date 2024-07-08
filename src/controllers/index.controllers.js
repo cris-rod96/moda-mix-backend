@@ -9,6 +9,7 @@ import cartDetailControllers from './cart-detail/cart-detail.controller.js';
 import orderControllers from './order/order.controller.js';
 import orderDetailControllers from './order-detail/order-detail.controller.js';
 import paymentControllers from './payment/payment.controller.js';
+import reactionControllers from './reaction/reaction.controller.js';
 export {
   categoryControllers,
   cartControllers,
@@ -20,5 +21,6 @@ export {
   orderControllers,
   paymentControllers,
   productControllers,
+  reactionControllers,
   userControllers,
 };
