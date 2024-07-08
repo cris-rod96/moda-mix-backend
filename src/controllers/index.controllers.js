@@ -8,6 +8,7 @@ import cartControllers from './cart/cart.controller.js';
 import cartDetailControllers from './cart-detail/cart-detail.controller.js';
 import orderControllers from './order/order.controller.js';
 import orderDetailControllers from './order-detail/order-detail.controller.js';
+import paymentControllers from './payment/payment.controller.js';
 export {
   categoryControllers,
   cartControllers,
@@ -17,6 +18,7 @@ export {
   supplierControllers,
   orderDetailControllers,
   orderControllers,
+  paymentControllers,
   productControllers,
   userControllers,
 };
