@@ -9,6 +9,7 @@ import cartDetailService from './cart-detail/cart-detail.service.js';
 import orderService from './order/order.service.js';
 import orderDetailService from './order-detail/order-detail.service.js';
 import paymentService from './payment/payment.service.js';
+import reactionService from './reaction/reaction.service.js';
 export {
   cartService,
   cartDetailService,
@@ -21,4 +22,5 @@ export {
   orderDetailService,
   orderService,
   paymentService,
+  reactionService,
 };
